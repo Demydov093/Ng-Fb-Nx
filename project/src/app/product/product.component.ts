@@ -7,8 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    setTimeout(()=>{
+      this.productName = "A tree";
+    },3000)
+  }
 
+  productName = 'A book';
   ngOnInit() {
   }
 
