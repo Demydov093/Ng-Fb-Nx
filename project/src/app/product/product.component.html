@@ -1,4 +1,5 @@
-<h1>My Proucts</h1>
-<input type="text" [(ngModel)] = "productName">
-<button (click)="productName = 'Hello Dima'">Change Name</button>
-<div>{{ productName }}</div>
+
+<article class="product" (click)="onClicked()">
+  <div>{{ productName }}</div>
+  <p>An awesome product!</p>
+</article>
